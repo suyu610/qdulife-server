@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.CheckMapper">
+
+
+  <select id="getFreeStatus" resultType="String">
+    select status
+    from status where className=#{className} and week=#{week} and whichweek=#{whichWeek}
+  </select>
+
+  <select id="getFreeDetailStatus" resultType="String">
+    select seq
+    from course_time_schedule where class_name=#{className} and week=#{week} and whichweek like #{whichWeekStr}
+  </select>
+
+</mapper>

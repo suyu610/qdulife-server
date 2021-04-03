@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.UserMapper">
+
+  <select id="isExistOpenid" parameterType="string" resultType="Boolean">
+    select (select count(*) from user where openid = #{openid})>0
+  </select>
+
+  <insert id="insertNewUser">
+    insert into user (openid,create_time,last_login_time)
+    values (#{openid},#{now},#{now});
+  </insert>
+
+  <select id = "getUserByOpenid" parameterType="string" resultType="qdu.life.BO.UserBO">
+    select * from user where openid = #{openid}
+  </select>
+
+  <select id = "getUserTokenBoByOpenid" parameterType="string" resultType="qdu.life.BO.UserTokenBO">
+    select * from user where openid = #{openid}
+  </select>
+
+  <select id="getTemplateCourseByOpenid" resultType="qdu.life.BO.TemplateCourseBO">
+    select
+      user_course.course_name,
+      user_course.class_name,
+      user_course.seq,
+      class.direction
+      from user_course inner join class on class.rName = user_course.class_name
+        where openid = #{openid} and week = #{week} and whichweek like #{whichweek}
+  </select>
+
+  <select id="getUserRealNameByOpenid" resultType="String">
+    select real_name from user where openid = #{openid}
+  </select>
+
+  <select id="getFriendOpenidByOpenid" resultType="String">
+    select relatedOpenid from user where openid = #{openid}
+  </select>
+
+  <select id="getCourseByOpenid" resultType="qdu.life.BO.UserCourseBO">
+    select
+      uc.class_name,
+      uc.week,
+      uc.score,
+      uc.teachers,
+      uc.whichweek,
+      uc.week,
+      uc.seq,
+      uc.info_str,
+      uc.course_name,
+      class.direction,
+      class.buildingId,
+      class.roomId,
+      class.rFloor
+    from user_course uc inner join class on class.rName = uc.class_name
+    where
+          uc.openid = #{openid,jdbcType=VARCHAR}
+          and
+          uc.term = #{term,jdbcType=INTEGER}
+          and
+          uc.year = #{year,jdbcType=INTEGER}
+  </select>
+
+  <update id="bindFriend">
+    UPDATE user set relatedOpenid = #{friendOpenid} where openid = #{openid}
+  </update>
+
+  <update id="updateInfo">
+    UPDATE user set nickname = #{nickname} , avatar_url = #{avatar} where openid = #{openid}
+  </update>
+
+
+  <update id="setClock">
+    UPDATE user set clock_on = #{status} where openid = #{openid}
+  </update>
+
+  <select id="getAllUserOpenidOpenClock" resultType="qdu.life.BO.UserBO">
+    select real_name,openid from user where clock_on = 1;
+  </select>
+
+  <select id="getUserRelatedOpenid" resultType="String">
+    select relatedOpenid from user where openid = #{openid};
+  </select>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.FeedbackMapper">
+
+  <resultMap id="BaseResultMap" type="qdu.life.model.FeedbackModel">
+    <result column="feedbackId" jdbcType="INTEGER" property="dialogId" />
+    <result column="classname" jdbcType="VARCHAR" property="classname" />
+    <result column="info" jdbcType="VARCHAR" property="info" />
+    <result column="ftype" jdbcType="VARCHAR" property="ftype" />
+    <result column="feedbacktime" jdbcType="TIMESTAMP" property="feedbacktime" />
+  </resultMap>
+
+  <insert id="insertNewFeedback" parameterType="qdu.life.model.FeedbackModel">
+    insert into feedback(
+    classname,
+    info,
+    ftype,
+    feedbacktime
+    )
+    values(#{classname},#{info},#{ftype},#{feedbacktime})
+  </insert>
+</mapper>

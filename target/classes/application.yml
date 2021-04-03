@@ -1,0 +1,67 @@
+pagehelper:
+  helper-dialect: mysql
+server:
+  port: 4396
+  context-path: /
+spring:
+  #出现错误时, 直接抛出异常(便于异常统一处理，否则捕获不到404)
+  mvc:
+    throw-exception-if-no-handler-found: true
+  #不要为我们工程中的资源文件建立映射
+  resources:
+    add-mappings: false
+
+  application:
+    name: classQuery
+  mail:
+    host: smtp.sina.com
+    username: suyu_wxapp@163.com
+    password: ZMFJOALKRCDUXSHL
+    default-encoding: utf-8
+    properties:
+      main:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  datasource:
+    username: root
+    password: HPyuko12!!
+    url: jdbc:mysql://127.0.0.1:3306/classroom?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  redis:
+    host: localhost
+    port: 6379
+    max-wait: 30000
+    max-active: 1000
+    max-idle: 20
+    min-idle: 0
+    timeout: 3000
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: qdu.life.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+token:
+  #redis默认过期时间（2小时）(这是自定义的)(毫秒)
+  expirationMilliSeconds: 7200000
+  bindCourseTokenExpirationMilliSeconds: 36000000
+
+logging:
+  config: classpath:log4j2.yml
+
+
+
+#微信相关参数
+weChat:
+  #小程序appid
+  appid: wx607821b428f6d5d1
+  #小程序密钥
+  secret: cd96a2ca99cede28f9479e20590b7b79

@@ -1,0 +1,88 @@
+2021-04-03 02:36:20.569 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:20.569 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.UserMapper.getUserRealNameByOpenid'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.UserMapper.getUserRealNameByOpenid'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0732DpFa10D2NA0vzGFa163Yrz32DpF3
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0732DpFa10D2NA0vzGFa163Yrz32DpF3
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:20.595 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:26.417 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:26.417 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:26.424 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.UserMapper.getUserRealNameByOpenid'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-04-03 02:36:26.424 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.UserMapper.getUserRealNameByOpenid'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-04-03 02:36:26.424 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/053ZVIkl2NvYM64YShol21l9Jw2ZVIkt
+2021-04-03 02:36:26.424 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/053ZVIkl2NvYM64YShol21l9Jw2ZVIkt
+2021-04-03 02:36:26.429 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 02:36:26.429 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 03:34:34.112 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 03:34:34.112 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 03:34:34.167 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-03 03:34:34.167 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-03 03:34:34.167 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getCourse/friend/
+2021-04-03 03:34:34.167 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getCourse/friend/
+2021-04-03 03:34:34.168 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 03:34:34.168 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:39:19.335 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:39:19.335 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:39:19.344 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /api/user/checkTokenAndBindtoken
+2021-04-03 05:39:19.344 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /api/user/checkTokenAndBindtoken
+2021-04-03 05:39:19.345 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBindtoken
+2021-04-03 05:39:19.345 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBindtoken
+2021-04-03 05:39:19.347 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:39:19.347 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:20.205 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:20.205 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:20.206 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /api/user/checkTokenAndBindtoken
+2021-04-03 05:48:20.206 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /api/user/checkTokenAndBindtoken
+2021-04-03 05:48:20.207 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBindtoken
+2021-04-03 05:48:20.207 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBindtoken
+2021-04-03 05:48:20.207 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:20.207 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:54.762 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:54.762 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:54.763 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-03 05:48:54.763 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-03 05:48:54.764 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/token
+2021-04-03 05:48:54.764 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/token
+2021-04-03 05:48:54.765 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 05:48:54.765 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:00:12.618 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:00:12.618 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:00:12.622 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'POST' not supported
+2021-04-03 06:00:12.622 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'POST' not supported
+2021-04-03 06:00:12.623 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/eyJhbGciOiJIUzUxMiJ9.eyJvcGVuaWQiOiJvckdxMzVNMXZZWXF5MzhQQURWRGJxLVEtaXN3In0.b4wwm0w2P2lMQV12iVbdqawCMlpIXE_GoYbZFlFRV5BXxKBSNebwpPnJLFzyM9daxncx53siGBrnY4qjzucFww
+2021-04-03 06:00:12.623 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/eyJhbGciOiJIUzUxMiJ9.eyJvcGVuaWQiOiJvckdxMzVNMXZZWXF5MzhQQURWRGJxLVEtaXN3In0.b4wwm0w2P2lMQV12iVbdqawCMlpIXE_GoYbZFlFRV5BXxKBSNebwpPnJLFzyM9daxncx53siGBrnY4qjzucFww
+2021-04-03 06:00:12.624 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:00:12.624 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:40.068 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:40.068 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:40.076 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:01:40.076 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:01:40.077 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:01:40.077 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:01:40.078 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:40.078 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:44.352 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:44.352 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:44.352 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:01:44.352 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:01:44.353 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:01:44.353 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:01:44.353 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:01:44.353 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:07.286 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:07.286 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:07.287 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:02:07.287 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind/
+2021-04-03 06:02:07.288 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:02:07.288 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind/
+2021-04-03 06:02:07.288 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:07.288 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:26.046 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:26.046 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for POST /api/user/checkTokenAndBind
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/checkTokenAndBind
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-03 06:02:26.047 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
