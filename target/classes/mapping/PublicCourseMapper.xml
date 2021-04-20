@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.PublicCourseMapper">
+  <select id="getCourseByName" resultType="qdu.life.model.BO.Course.PublicCourseBO">
+    select
+        cts.key_course,
+        cts.key_seq,
+        cb.course_name,
+        cb.teachers,
+        cb.capacity,
+        cb.stu_number,
+        cb.course_type_id,
+        cb.score,
+        cts.class_name,
+        cts.info_str,
+        cb.campus_id
+    from course_base cb join course_time_schedule cts
+            on cb.seq = cts.key_seq
+            and
+            cb.course = cts.key_course
+        where cb.course_name like #{course_name} and cts.week like #{week} and cts.seq like #{seq} and cb.campus_id like #{campus_id}
+  </select>
+
+  <select id="getCourseByInfoAndSeqAndCourse" resultType="qdu.life.model.PO.UserCoursePO">
+    select
+        cts.key_course,
+        cts.key_seq,
+        cb.course_name,
+        cb.score,
+        cb.teachers,
+        cts.whichweek,
+        cts.week,
+        cts.seq,
+        cts.info_str,
+        class_name
+    from course_base cb join course_time_schedule cts
+        on cb.seq = cts.key_seq
+        and
+        cb.course = cts.key_course
+    where key_course = #{key_course}
+    and key_seq = #{key_seq}
+    and info_str = #{info_str}
+  </select>
+
+  <insert id="insertPublicCourse" parameterType="qdu.life.model.BO.Course.PublicCourseBO">
+    insert into user_course_add_jw (key_course, key_seq, openid, course_name, score, teachers, whichweek, week, seq, info_str, class_name)
+    values(#{key_course},#{key_seq},#{openid}, #{course_name}, #{score,jdbcType=FLOAT}, #{teachers}, #{whichweek}, #{week}, #{seq}, #{info_str}, #{class_name});
+  </insert>
+</mapper>

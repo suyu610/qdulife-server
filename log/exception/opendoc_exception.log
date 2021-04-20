@@ -1,0 +1,128 @@
+2021-04-08 01:22:13.785 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:22:13.785 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+### The error may exist in file [/Users/uuorb/Desktop/青空/空教室查询/code/server/target/classes/mapping/UserMapper.xml]
+### The error may involve qdu.life.mapper.UserMapper.isExistOpenid-Inline
+### The error occurred while setting parameters
+### SQL: select (select count(*) from userPO where openid = ?)>0
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+### The error may exist in file [/Users/uuorb/Desktop/青空/空教室查询/code/server/target/classes/mapping/UserMapper.xml]
+### The error may involve qdu.life.mapper.UserMapper.isExistOpenid-Inline
+### The error occurred while setting parameters
+### SQL: select (select count(*) from userPO where openid = ?)>0
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
+2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0338Ae000swZtL1qMn300vV1fh38Ae0a
+2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0338Ae000swZtL1qMn300vV1fh38Ae0a
+2021-04-08 01:22:13.803 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:22:13.803 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
+2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
+2021-04-08 01:24:46.497 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:24:46.497 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : buildingIdList: -1
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : buildingIdList: -1
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : onlyFree: false
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : onlyFree: false
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : expectStatus: []
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : expectStatus: []
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : campuseId: 1709
+2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : campuseId: 1709
+2021-04-08 01:24:46.499 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:24:46.499 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:25:15.950 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:25:15.950 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@6705812d; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@6705812d; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:26:18.419 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:26:18.419 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@426f3d0a; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@426f3d0a; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:26:18.423 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:26:18.423 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@453bac84; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@453bac84; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@2930324e; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@2930324e; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:37:42.134 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:37:42.134 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:37:42.136 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@4ed9fcf2; line: 1, column: 53] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:37:42.136 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
+ at [Source: java.io.PushbackInputStream@4ed9fcf2; line: 1, column: 53] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
+2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
+2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 02:13:39.361 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 02:13:39.361 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/logindean/
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/logindean/
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:29:59.846 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:29:59.846 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:29:59.848 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:29:59.848 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:05.166 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:05.166 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
+2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
+2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:30:05.168 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:05.168 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:30.327 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:30.327 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:30.331 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 21:30:30.331 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
+2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 23:40:22.330 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 23:40:22.330 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 23:40:22.365 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 23:40:22.365 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:null
+2021-04-08 23:40:22.366 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getAddCourse/
+2021-04-08 23:40:22.366 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getAddCourse/
+2021-04-08 23:40:22.367 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-04-08 23:40:22.367 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================

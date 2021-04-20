@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.RoomScheduleMapper">
+  <select id="getCourseByRoomAndWhichWeek" resultType="qdu.life.model.BO.Course.ScheduleBO">
+    select
+      a.week,
+      a.seq,
+      b.course_name,
+      b.teachers
+    from course_time_schedule a  join course_base b
+                                      on
+                                        (a.key_course = b.course
+                                          and
+                                         a.key_seq = b.seq)
+    where
+      a.class_name like #{roomname,jdbcType=VARCHAR}
+      and
+      a.whichweek like #{whichWeek,jdbcType=INTEGER}
+  </select>
+</mapper>

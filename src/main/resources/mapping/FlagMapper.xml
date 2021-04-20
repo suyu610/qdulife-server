@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="qdu.life.mapper.FlagMapper">
+  <select id="getLikeList" resultType="String">
+    SELECT like_openid_list FROM flag WHERE flag_id = #{flag_id}
+  </select>
+
+  <update id="incrementShowCount">
+    UPDATE flag set show_count = show_count+1 where flag_id = #{flag_id}
+  </update>
+  <update id="incrementLikeCount">
+    UPDATE flag set like_count = like_count+1 where flag_id = #{flag_id}
+  </update>
+
+  <update id="decrementLikeCount">
+    UPDATE flag set like_count = like_count-1 where flag_id = #{flag_id}
+  </update>
+
+  <update id="updateFlagLikeList">
+    UPDATE flag set like_openid_list = #{newLikeList} where flag_id = #{flag_id}
+  </update>
+
+  <update id="togglePrivateFlag">
+    UPDATE flag set is_public = !is_public where flag_id = #{flag_id}
+  </update>
+
+  <select id="getRandomPublicFlag" resultType="qdu.life.model.PO.FlagPO">
+    select flag_id,show_count,like_count,like_openid_list,content,openid from `flag` where is_public = 1 and is_verify = 1 order by rand() limit 1;
+  </select>
+
+  <insert id="insertPrivateFlag" parameterType="qdu.life.model.PO.FlagPO">
+    INSERT into `flag` (is_public, is_verify, openid, content, create_date)   values(#{is_public}, #{is_verify}, #{openid},#{content},#{create_date})
+  </insert>
+
+  <delete id="deletePrivateFlag" parameterType="integer">
+    delete from flag where flag_id = #{flag_id}
+  </delete>
+
+  <select id="getLatestPrivateFlag" resultType="Integer">
+    select max(flag_id) from flag where openid =  #{openid}
+  </select>
+
+  <select id="getAllPrivateFlag" resultType="qdu.life.model.BO.Flag.FlagPrivateBO">
+        select * from flag where openid = #{openid}
+  </select>
+
+  <select id="isOwner" resultType="Integer">
+    select COUNT(flag_id) from flag where  openid = #{openid} and flag_id = #{flag_id}
+  </select>
+
+
+
+</mapper>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.ClassRoomMapper">
+
+  <resultMap id="BaseResultMap" type="qdu.life.model.PO.ClassPO">
+    <result column="roomId" jdbcType="INTEGER" property="id" />
+    <result column="buildingId" jdbcType="INTEGER" property="city" />
+    <result column="rName" jdbcType="VARCHAR" property="rName" />
+    <result column="rType" jdbcType="VARCHAR" property="rType" />
+    <result column="rChairType" jdbcType="VARCHAR" property="rChairType" />
+    <result column="rSpace" jdbcType="INTEGER" property="rSpace" />
+    <result column="rFloor" jdbcType="INTEGER" property="rFloor" />
+
+  </resultMap>
+
+  <resultMap id="ClassRoomBOResultMap" type="qdu.life.model.BO.Classroom.ClassBO">
+    <result column="rName" jdbcType="VARCHAR" property="rName" />
+    <result column="typeDesc" jdbcType="VARCHAR" property="typeDesc" />
+    <result column="rChairType" jdbcType="VARCHAR" property="rChairType" />
+    <result column="rSpace" jdbcType="INTEGER" property="rSpace" />
+    <result column="rFloor" jdbcType="INTEGER" property="rFloor" />
+  </resultMap>
+
+  <select id="getFreeStatus" resultType="String">
+    select status
+    from status where className=#{className} and week=#{week} and whichweek=#{whichWeekStr}
+  </select>
+
+
+  <select id="getClassByBuildId" resultType="qdu.life.model.BO.Classroom.ClassBO">
+    select a.roomId,a.buildingId,a.rName,b.typeDesc,a.rChairType,a.rSpace,a.rFloor from class a
+    inner join classType b
+    on a.rType = b.typeId
+    where buildingId = #{buildingId,jdbcType=INTEGER}
+  </select>
+
+  <select id="getClassByBuildIdAndFloor" resultType="qdu.life.model.BO.Classroom.ClassBO">
+    select a.roomId,a.buildingId,a.rName,b.typeDesc,a.rChairType,a.rSpace,a.rFloor from class a
+    inner join classType b
+    on a.rType = b.typeId
+    where
+    buildingId = #{buildingId,jdbcType=INTEGER}
+    and
+    rFloor = #{floor,jdbcType=INTEGER}
+  </select>
+
+  <select id="getWholeStatusByClassName" resultType="qdu.life.model.BO.Classroom.StatusBO">
+    select status,whichweek,week from status
+    where
+    className = #{className,jdbcType=VARCHAR}
+  </select>
+
+
+  <select id="getClassByName" resultType="qdu.life.model.BO.Classroom.ClassRoomWithBuildingNameBO">
+    select c.bName,a.rName,b.typeDesc,a.rChairType,a.rSpace
+    from class a
+    inner join classType b
+    on a.rType = b.typeId
+    inner join building c
+    on a.buildingId = c.buildingId
+    where
+    rName = #{className,jdbcType=VARCHAR}
+   </select>
+
+  <select id="searchByWeekAndSeq" resultType="qdu.life.model.BO.Classroom.ClassRoomWithWholeInfo">
+    select
+    a.className,
+    a.statusId,
+    a.status,
+    b.rSpace,
+    c.bName,
+    b.rName,
+    b.rFloor,
+    c.bName,
+    d.typeDesc
+    from status a
+    inner join class b
+    on a.className = b.rName
+    inner join building c
+    on b.buildingId = c.buildingId
+    inner join classType d
+    on b.rType = d.typeId
+    where
+    status like #{seq,jdbcType=VARCHAR}
+    and
+    c.campusId = "1709"
+    and
+    b.rChairType = "固定桌椅"
+    and
+    whichweek = #{whichweek,jdbcType=INTEGER}
+    and
+    week = #{week,jdbcType=INTEGER}
+    and
+    (
+    b.rType = 1
+    or
+    b.rType = 7
+    )
+   </select>
+
+  <select id="searchMultiClassFreeStatusByWeekAndSeq" resultType="qdu.life.model.BO.Classroom.ClassRoomWithWholeInfo">
+    select
+    a.className,
+    a.statusId,
+    a.status,
+    b.rSpace,
+    c.bName,
+    b.rName,
+    b.rFloor,
+    c.bName,
+    d.typeDesc
+    from status a
+    inner join class b
+    on a.className = b.rName
+    inner join building c
+    on b.buildingId = c.buildingId
+    inner join classType d
+    on b.rType = d.typeId
+    where
+    status like #{seq,jdbcType=VARCHAR}
+    and
+    c.campusId = #{campuseId,jdbcType=INTEGER}
+    and
+    b.buildingId
+    IN
+    <foreach item="buildingId" collection="buildingIdArr" open="(" separator=',' close=")">
+      #{buildingId,jdbcType=INTEGER}
+    </foreach>
+    and
+    b.rChairType = "固定桌椅"
+    and
+    whichweek = #{whichweek,jdbcType=INTEGER}
+    and
+    week = #{week,jdbcType=INTEGER}
+    and
+    (
+    b.rType = 1
+    or
+    b.rType = 7
+    )
+   </select>
+
+
+
+  <select id="searchByWeekAndbuildingIdAndFloorAndLength" resultType="qdu.life.model.BO.Classroom.ClassRoomWithWholeInfo">
+     select
+      a.className,
+      a.statusId,
+      a.status,
+      b.rSpace,
+      b.rFloor,
+      c.bName,
+      b.rName,
+      c.bName,
+      d.typeDesc
+    from status a
+    inner join class b
+    on a.className = b.rName
+    inner join building c
+    on b.buildingId = c.buildingId
+    inner join classType d
+    on b.rType = d.typeId
+    where
+    status like #{length,jdbcType=VARCHAR}
+    and
+    c.campusId = "1709"
+    and
+    b.buildingId
+    IN
+    <foreach item="buildingId" collection="buildingIdArr" open="(" separator="," close=")">
+      #{buildingId,jdbcType=INTEGER}
+    </foreach>
+    and
+    b.rFloor like #{floor,jdbcType=INTEGER}
+    and
+    b.rChairType = "固定桌椅"
+    and
+    (
+    b.rType = 1
+    or
+    b.rType = 7
+    )
+    and
+    whichweek = #{whichweek,jdbcType=INTEGER}
+    and
+    week = #{week,jdbcType=INTEGER}
+    </select>
+</mapper>
