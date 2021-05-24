@@ -26,7 +26,15 @@ public class OpenidConfigurer extends WebMvcConfigurerAdapter {
     // 多个拦截器组成一个拦截器链
     // addPathPatterns 用于添加拦截规则
     // excludePathPatterns 用户排除拦截
-    registry.addInterceptor(getOpenidInterceptor()).addPathPatterns("/api/**").excludePathPatterns("/api/user/login/**").excludePathPatterns("/api/roomshedule/**").excludePathPatterns("/api/dialog/**").excludePathPatterns("/api/countdown/**").excludePathPatterns("/api/classroomstatus/**").excludePathPatterns("/api/autoreply/**");
+    registry.addInterceptor(getOpenidInterceptor()).
+      addPathPatterns("/v1/**")
+      .excludePathPatterns("/v1/user/login/**")
+      .excludePathPatterns("/v1/roomshedule/**")
+      .excludePathPatterns("/v1/dialog/**")
+      .excludePathPatterns("/v1/countdown/**")
+      .excludePathPatterns("/v1/classroomstatus/**")
+      .excludePathPatterns("/v1/eat/**")
+      .excludePathPatterns("/v1/autoreply/**");
     super.addInterceptors(registry);
   }
 }

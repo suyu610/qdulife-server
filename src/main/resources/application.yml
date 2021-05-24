@@ -26,10 +26,10 @@ spring:
             enable: true
             required: true
   datasource:
-    username: root
-    password: HPyuko12!!
-    url: jdbc:mysql://127.0.0.1:3306/classroom?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-    driver-class-name: com.mysql.jdbc.Driver
+    username: aliqdu
+
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
   http:
     encoding:
       charset: utf-8
@@ -44,10 +44,11 @@ spring:
     min-idle: 0
     timeout: 3000
 mybatis:
-  mapper-locations: classpath:mapping/*Mapper.xml
+  mapper-locations: classpath:mapper/*Mapper.xml
   type-aliases-package: qdu.life.model
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
 
 token:
   #redis默认过期时间（2小时）(这是自定义的)(毫秒)

@@ -295,17 +295,17 @@ public class UserServiceImpl implements UserService {
 
     // 返回token和avatar和nickname
     HashMap resultMap = new HashMap();
-    resultMap.put("avatar",user.getAvatar_url());
+    resultMap.put("avatar",user.getAvatarUrl());
     resultMap.put("nickname",user.getNickname());
     resultMap.put("token",token);
     if(relatedOpenid != null){
-      String friendReal_name = userMapper.getUserRealNameByOpenid(relatedOpenid);
-      if(friendReal_name == null){
-        friendReal_name = "他/她未导入教务课表";
+      String friendRealName = userMapper.getUserRealNameByOpenid(relatedOpenid);
+      if(friendRealName == null){
+        friendRealName = "他/她未导入教务课表";
       }
-      resultMap.put("friend_realname",friendReal_name);
+      resultMap.put("friendRealName",friendRealName);
     }else{
-      resultMap.put("friend_realname","");
+      resultMap.put("friendRealName","");
     }
     return ResultUtils.ok(resultMap);
   }

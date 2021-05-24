@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import qdu.life.common.Result;
 import qdu.life.service.CountdownService;
-import qdu.life.service.DialogService;
 import qdu.life.utils.ResultUtils;
 
 /**
@@ -18,7 +17,7 @@ import qdu.life.utils.ResultUtils;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/countdown")
+@RequestMapping("/v1/countdown")
 public class CountdownController {
   @Autowired
   @Qualifier("CountdownServiceImpl")

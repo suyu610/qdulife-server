@@ -61,11 +61,11 @@ public class WechatUtils {
     for (TemplateCourseBO userCourse : userCourseBOList) {
       seq.append(userCourse.getSeq()+"节; ");
       if(userCourse.getDirection() == 1){
-        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClass_name() +"    "+ userCourse.getCourse_name() + "  ←" + "\r\n\r\n");
+        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClassName() +"    "+ userCourse.getClassName() + "  ←" + "\r\n\r\n");
       }else if(userCourse.getDirection() == 2){
-        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClass_name()+"    "+ userCourse.getCourse_name()+"  →" +"\r\n\r\n");
+        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClassName()+"    "+ userCourse.getClassName()+"  →" +"\r\n\r\n");
       }else{
-        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClass_name()+"  " + userCourse.getCourse_name()+"\r\n\r\n");
+        firstStr.append(userCourse.getSeq()+"节\r\n"+userCourse.getClassName()+"  " + userCourse.getClassName()+"\r\n\r\n");
       }
     }
 

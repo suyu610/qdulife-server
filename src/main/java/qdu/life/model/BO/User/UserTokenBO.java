@@ -15,8 +15,8 @@ import java.io.Serializable;
 public class UserTokenBO implements Serializable {
   String openid;
   String userid;
-  String ss_number;
+  String ssNumber;
   String nickname;
-  String avatar_url;
+  String avatarUrl;
   String relatedOpenid;
 }

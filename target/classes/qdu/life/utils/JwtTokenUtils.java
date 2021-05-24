@@ -41,7 +41,8 @@ public class JwtTokenUtils {
     Map<String, Object> claims = new HashMap<String, Object>();
     claims.put("openid",user.getOpenid());
     claims.put("userid",user.getUserid());
-    claims.put("ssNumber",user.getSs_number());
+    claims.put("role","user");
+    claims.put("ssNumber",user.getSsNumber());
     return Jwts.builder()
       .setId(JWT_ID)
       .setExpiration(new Date(nowTime + expirationMilliSeconds))

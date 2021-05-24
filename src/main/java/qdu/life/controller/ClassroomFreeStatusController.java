@@ -19,7 +19,7 @@ import java.text.ParseException;
  **/
 
 @RestController
-@RequestMapping("/api/classroomstatus")
+@RequestMapping("/v1/classroomstatus")
 public class ClassroomFreeStatusController {
 
   @Qualifier("classRoomServiceImpl")

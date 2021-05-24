@@ -15,13 +15,13 @@ import java.sql.Date;
 
 @Data
 public class CountdownBO implements Serializable {
-  Date start_date;
+  Date startDate;
   // 类型，0为节假，1为考试
   int type;
   // 放几天
   int duration;
   //  报名时间
-  Date sign_date;
+  Date signDate;
   String name;
 
 }

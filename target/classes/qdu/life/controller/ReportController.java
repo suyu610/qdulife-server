@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/report")
+@RequestMapping("/v1/report")
 public class ReportController {
 
 }

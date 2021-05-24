@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/course")
+@RequestMapping("/v1/course")
 public class PublicCourseController {
   @Autowired
   @Qualifier("PublicCourseServiceImpl")

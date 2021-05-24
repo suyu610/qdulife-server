@@ -18,6 +18,6 @@ public class ScheduleBO implements Serializable {
   // 周
   int week;
   String seq;
-  String course_name;
+  String courseName;
   String teachers;
 }

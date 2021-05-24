@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qdu.life.mapper.EatWhatMapper">
+
+  <select id="findLikeCountByFoodId" resultType="Integer">
+    select count(*) from eat_like where food_id =#{foodId}
+  </select>
+
+  <select id="findCommentCountByFoodId" resultType="Integer">
+    select count(*) from eat_comment where food_id =#{foodId}
+  </select>
+
+  <select id="findAllFood" resultType="qdu.life.model.BO.EatWhat.Food">
+    SELECT
+    food.id,
+    food.weight,
+    food.desc_full,
+    food.desc_short,
+    food.food_name,
+    food.wait_time,
+    windows.window_name,
+    windows.floor,
+    c.cName,
+    canteen.canteen_name,
+    canteen.id as canteenId
+    from eat_food food
+    inner join eat_location_window windows on food.window_id = windows.id
+    inner join eat_location_canteen canteen on windows.canteen_id = canteen.id
+    inner join campus c on canteen.campuse_id = c.campusId
+
+    <if test="windowId != -1">
+      where windows.id = #{windowId}
+    </if>
+    <if test="canteenId != -1 and windowId == -1">
+      where canteen.id = #{canteenId}
+    </if>
+    ORDER BY RAND() LIMIT 0,15
+  </select>
+
+  <select id="findPriceByFoodId" resultType="String">
+    select ep.price_num
+    from eat_food_price
+           inner join eat_price ep on eat_food_price.price_id = ep.id
+    where eat_food_price.food_id = #{foodID}
+  </select>
+
+  <select id="findTagByFoodId" resultType="String">
+    select ep.info
+    from eat_food_tag
+           inner join eat_tag ep on eat_food_tag.tag_id = ep.id
+    where eat_food_tag.food_id = #{foodID}
+  </select>
+
+
+
+  <select id="findTasteByFoodId" resultType="String">
+    select ep.info
+    from eat_food_taste
+           inner join eat_taste ep on eat_food_taste.taste_id = ep.id
+    where eat_food_taste.food_id = #{foodID}
+  </select>
+
+  <select id="findImageByFoodId" resultType="qdu.life.model.BO.EatWhat.FoodImage">
+    select eat_food_image.img_url,
+           eat_food_image.title
+    from eat_food_image
+    where eat_food_image.food_id = #{foodID}
+  </select>
+
+  <select id="findComponentByFoodId" resultType="String">
+    select eat_component.info
+    from eat_food_component
+           inner join eat_component on eat_food_component.component_id = eat_component.id
+    where eat_food_component.food_id = #{foodID}
+  </select>
+
+</mapper>

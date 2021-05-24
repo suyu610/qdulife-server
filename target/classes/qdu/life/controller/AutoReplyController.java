@@ -24,7 +24,7 @@ import java.util.Map;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/autoreply")
+@RequestMapping("/v1/autoreply")
 public class AutoReplyController {
   @GetMapping("/authorize")
   public String authorize(HttpServletRequest request){

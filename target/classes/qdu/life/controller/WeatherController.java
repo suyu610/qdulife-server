@@ -20,7 +20,7 @@ import java.io.IOException;
  **/
 
 @RestController
-@RequestMapping("/api/weather")
+@RequestMapping("/v1/weather")
 public class WeatherController {
 
   @Autowired

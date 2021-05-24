@@ -25,7 +25,7 @@ import java.util.Map;
  **/
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/v1/user")
 public class UserController {
   @Autowired
   private UserService userService;
@@ -46,7 +46,7 @@ public class UserController {
   public Result login(@PathVariable("code") String code)throws Exception{
     return userService.wxLogin(code);
   }
-
+  //
   // 判断用户是否已经绑定好友，若已绑定，则返回-1，如果没有，则返回一串临时字符串。
   @GetMapping("/checkBindFriend")
   public Result checkBindFriend(HttpServletRequest request){

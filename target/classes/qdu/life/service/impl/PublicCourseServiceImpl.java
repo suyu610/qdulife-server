@@ -79,7 +79,7 @@ public class PublicCourseServiceImpl implements PublicCourseService {
   // 往用户课表中，插入课程
   @Override
   public void insertPublicCourse(String openid, PublicCourseBO bo) {
-    UserCoursePO userCoursePO = mapper.getCourseByInfoAndSeqAndCourse(bo.getInfo_str(),bo.getKey_course(),bo.getKey_seq());
+    UserCoursePO userCoursePO = mapper.getCourseByInfoAndSeqAndCourse(bo.getInfoStr(),bo.getKeyCourse(),bo.getKeySeq());
     userCoursePO.setOpenid(openid);
     userCoursePO.setTerm(1);
     userCoursePO.setYear(41);

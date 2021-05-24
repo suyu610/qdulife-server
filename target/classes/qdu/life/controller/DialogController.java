@@ -19,7 +19,7 @@ import qdu.life.utils.ResultUtils;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/dialog")
+@RequestMapping("/v1/dialog")
 public class DialogController {
   @Autowired
   private DialogService service;

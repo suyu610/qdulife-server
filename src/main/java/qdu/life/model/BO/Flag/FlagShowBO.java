@@ -13,11 +13,11 @@ import lombok.Data;
 @Data
 public class FlagShowBO {
   // 根据用户openid,得到这个值
-  @JsonProperty("is_like")
-  boolean is_like;
-  int flag_id;
-  int show_count;
-  int like_count;
+  @JsonProperty("isLike")
+  boolean isLike;
+  int flagId;
+  int showCount;
+  int likeCount;
   // 收到点赞后的回复信息
   String reply;
   // 微信名

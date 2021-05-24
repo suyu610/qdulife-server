@@ -13,7 +13,7 @@ import qdu.life.service.FeedbackService;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/feedback")
+@RequestMapping("/v1/feedback")
 public class FeedbackController {
   @Autowired
   private FeedbackService service;

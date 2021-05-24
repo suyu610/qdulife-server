@@ -18,7 +18,7 @@ import java.text.ParseException;
 // 逐步弃用，改为ClassRoomFreeStatusController
 
 @RestController
-@RequestMapping("/api/class")
+@RequestMapping("/v1/class")
 public class mainController {
   @Autowired
   private ClassRoomService service;

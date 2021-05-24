@@ -47,8 +47,11 @@ public class TokenInterceptor implements HandlerInterceptor {
     Map<String,Object> map = JwtTokenUtils.getClaims(authToken);
     // 获取在token中的subject，也就是openid
     String openid = (String) map.get("openid");
-    // token中，解析不到openid
+    String role = (String) map.get("role");
+    // token中，解析不到openid,role
     Assert.notNull(openid,ResultUtils.unAuth().toString());
+    Assert.notNull(role,ResultUtils.unAuth().toString());
+
     // 如果redis里不存在这个key , 说明已过期或者是伪造的
     if (!redisUtil.hasKey(openid)){
       response.getWriter().write(ResultUtils.unAuth().toString());

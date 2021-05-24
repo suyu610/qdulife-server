@@ -14,16 +14,16 @@ import java.util.Date;
  **/
 @Data
 public class FlagPO implements Serializable {
-  int flag_id;
-  int show_count;
-  int like_count;
+  int flagId;
+  int showCount;
+  int likeCount;
   // 用户是否设置为公开
-  int is_public;
+  int isPublic;
   // 是否审核通过
-  int is_verify;
+  int isCerify;
   // 点赞的人的openid
-  String like_openid_list;
+  String likeOpenidList;
   String openid;
   String content;
-  Date create_date;
+  Date createDate;
 }

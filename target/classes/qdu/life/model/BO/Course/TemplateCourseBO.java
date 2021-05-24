@@ -14,8 +14,8 @@ import java.io.Serializable;
 
 @Data
 public class TemplateCourseBO implements Serializable {
-  String course_name;
-  String class_name;
+  String courseName;
+  String className;
   String seq;
   int direction;
   int startIndex;

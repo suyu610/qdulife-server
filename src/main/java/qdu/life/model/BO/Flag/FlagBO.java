@@ -16,17 +16,17 @@ import java.util.Date;
 @Data
 public class FlagBO implements Serializable {
   // 根据用户openid,得到这个值
-  @JsonProperty("is_like")
-  boolean is_like;
-  int flag_id;
-  int show_count;
-  int like_count;
+  @JsonProperty("isLike")
+  boolean isLike;
+  int flagId;
+  int showCount;
+  int likeCount;
   // 用户是否设置为公开
-  int is_public;
+  int isPublic;
   // 是否审核通过
-  int is_verify;
+  int isVerify;
   // 点赞的人的名字
-  String like_username_list;
+  String likeUsernameList;
   ///// flag所有者的信息
   String openid;
   // 收到点赞后的回复信息
@@ -38,6 +38,6 @@ public class FlagBO implements Serializable {
   //  多少级
   int year;
   String content;
-  Date create_date;
+  Date createDate;
 
 }

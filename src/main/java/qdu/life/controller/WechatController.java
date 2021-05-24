@@ -19,7 +19,7 @@ import java.io.IOException;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/wechat")
+@RequestMapping("/v1/wechat")
 public class WechatController {
   @Autowired
   private WechatService service;

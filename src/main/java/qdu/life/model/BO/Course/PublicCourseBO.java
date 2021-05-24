@@ -14,15 +14,15 @@ import java.io.Serializable;
 
 @Data
 public class PublicCourseBO implements Serializable {
-  String key_course;
-  String key_seq;
-  String course_name;
-  String info_str;
+  String keyCourse;
+  String keySeq;
+  String courseName;
+  String infoStr;
   String teachers;
-  String class_name;
+  String className;
   int capacity;
-  int stu_number;
-  int course_type;
+  int stuNumber;
+  int courseType;
   float score;
-  int campus_id;
+  int campusId;
 }

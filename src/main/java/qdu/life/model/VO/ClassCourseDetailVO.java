@@ -15,6 +15,6 @@ public class ClassCourseDetailVO {
   int week;
   //
   String seq;
-  String course_name;
+  String courseName;
   String teachers;
 }

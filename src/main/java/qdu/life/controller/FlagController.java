@@ -20,7 +20,7 @@ import java.util.Date;
  * @Version 0.1
  **/
 @RestController
-@RequestMapping("/api/flag")
+@RequestMapping("/v1/flag")
 public class FlagController {
 
   @Autowired
@@ -53,7 +53,7 @@ public class FlagController {
   Result insertPrivateFlag(HttpServletRequest request,@RequestBody FlagPO flagPO){
     String openid = (String)request.getAttribute("openid");
     flagPO.setOpenid(openid);
-    flagPO.setCreate_date(new Date());
+    flagPO.setCreateDate(new Date());
 
     return ResultUtils.ok(service.insertNewFlag(openid, flagPO));
   }

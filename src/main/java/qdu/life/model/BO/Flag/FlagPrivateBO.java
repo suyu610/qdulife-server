@@ -15,17 +15,17 @@ import java.util.Date;
 @Data
 
 public class FlagPrivateBO implements Serializable {
-  String flag_id;
-  int show_count;
-  int like_count;
+  String flagId;
+  int showCount;
+  int likeCount;
   // 用户是否设置为公开
-  int is_public;
+  int isPublic;
   // 是否审核通过
-  int is_verify;
+  int isVerify;
   // 点赞的人的名字
-  String like_username_list;
+  String likeUsernameList;
   //  多少级
   int year;
   String content;
-  Date create_date;
+  Date createDate;
 }

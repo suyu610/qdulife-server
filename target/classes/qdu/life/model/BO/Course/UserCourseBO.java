@@ -24,8 +24,8 @@ import java.io.Serializable;
  */
 @Data
 public class UserCourseBO implements Serializable {
-  String course_name;
-  String class_name;
+  String courseName;
+  String className;
   String teachers;
   int score;
   int week;
@@ -36,5 +36,5 @@ public class UserCourseBO implements Serializable {
   String roomId;
   // 教室方位
   int direction;
-  String info_str;
+  String infoStr;
 }

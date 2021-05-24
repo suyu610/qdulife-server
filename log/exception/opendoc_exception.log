@@ -1,128 +1,206 @@
-2021-04-08 01:22:13.785 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:22:13.785 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-### The error may exist in file [/Users/uuorb/Desktop/青空/空教室查询/code/server/target/classes/mapping/UserMapper.xml]
-### The error may involve qdu.life.mapper.UserMapper.isExistOpenid-Inline
-### The error occurred while setting parameters
-### SQL: select (select count(*) from userPO where openid = ?)>0
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : 发生异常:
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-### The error may exist in file [/Users/uuorb/Desktop/青空/空教室查询/code/server/target/classes/mapping/UserMapper.xml]
-### The error may involve qdu.life.mapper.UserMapper.isExistOpenid-Inline
-### The error occurred while setting parameters
-### SQL: select (select count(*) from userPO where openid = ?)>0
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'classroom.userpo' doesn't exist
-2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0338Ae000swZtL1qMn300vV1fh38Ae0a
-2021-04-08 01:22:13.802 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/login/0338Ae000swZtL1qMn300vV1fh38Ae0a
-2021-04-08 01:22:13.803 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:22:13.803 -ERROR  [nio-4396-exec-8] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
-2021-04-08 01:24:46.496 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
-2021-04-08 01:24:46.497 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:24:46.497 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : buildingIdList: -1
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : buildingIdList: -1
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : onlyFree: false
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : onlyFree: false
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : expectStatus: []
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : expectStatus: []
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : campuseId: 1709
-2021-04-08 01:24:46.498 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : campuseId: 1709
-2021-04-08 01:24:46.499 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:24:46.499 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:25:15.950 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:25:15.950 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@6705812d; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@6705812d; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:25:15.952 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:26:18.419 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:26:18.419 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@426f3d0a; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@426f3d0a; line: 1, column: 56] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:26:18.422 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:26:18.423 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:26:18.423 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@453bac84; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:27:09.417 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@453bac84; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:09.418 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@2930324e; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@2930324e; line: 1, column: 54] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:27:12.149 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:37:42.134 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:37:42.134 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:37:42.136 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@4ed9fcf2; line: 1, column: 53] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:37:42.136 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:JSON parse error: Can not deserialize instance of java.lang.String out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_ARRAY token
- at [Source: java.io.PushbackInputStream@4ed9fcf2; line: 1, column: 53] (through reference chain: qdu.life.model.BO.Classroom.ClassRoomStatusPostDataBO["expectStatus"])
-2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/classroomstatus/today
-2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 01:37:42.137 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 02:13:39.361 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 02:13:39.361 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/logindean/
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/logindean/
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 02:13:39.369 -ERROR  [nio-4396-exec-6] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:29:59.846 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:29:59.846 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:29:59.847 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:29:59.848 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:29:59.848 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:05.166 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:05.166 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
-2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'GET' not supported
-2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:30:05.167 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:30:05.168 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:05.168 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:30.327 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:30.327 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:30.331 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 21:30:30.331 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/class/sequence/today/_____________
-2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 21:30:30.332 -ERROR  [nio-4396-exec-7] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 23:40:22.330 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 23:40:22.330 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 23:40:22.365 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 23:40:22.365 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:null
-2021-04-08 23:40:22.366 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getAddCourse/
-2021-04-08 23:40:22.366 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/api/user/getAddCourse/
-2021-04-08 23:40:22.367 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
-2021-04-08 23:40:22.367 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:38:49.322 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:38:49.322 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:38:49.329 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /v1
+2021-05-24 06:38:49.329 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:No handler found for GET /v1
+2021-05-24 06:38:49.330 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1
+2021-05-24 06:38:49.330 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1
+2021-05-24 06:38:49.330 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:38:49.330 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:05.392 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:05.392 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:05.394 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:39:05.394 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:39:05.396 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:39:05.396 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:39:05.396 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:05.396 -ERROR  [nio-4396-exec-3] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:17.375 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:17.375 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:17.375 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:39:17.375 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:39:17.376 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:39:17.376 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:39:17.376 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:39:17.376 -ERROR  [nio-4396-exec-5] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:40:49.118 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:40:49.118 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:40:49.119 -ERROR  [io-4396-exec-10] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:41:25.876 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:41:25.876 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:41:25.876 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:41:25.876 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:41:25.877 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:41:25.877 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:41:25.877 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:41:25.877 -ERROR  [nio-4396-exec-2] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.binding.BindingException: Parameter 'windowId' not found. Available parameters are [arg1, arg0, param1, param2]
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396/v1/eat/allfood
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:42:41.114 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 06:46:07.197 -ERROR  [           main] o.a.j.l.DirectJDKLog           : Failed to start end point associated with ProtocolHandler ["http-nio-4396"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_231]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at qdu.life.ApplicationMain.main(ApplicationMain.java:17) [classes/:?]
+2021-05-24 06:46:07.200 -ERROR  [           main] o.a.j.l.DirectJDKLog           : Failed to start connector [Connector[HTTP/1.1-4396]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-4396]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at qdu.life.ApplicationMain.main(ApplicationMain.java:17) [classes/:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_231]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 more
+2021-05-24 06:46:07.222 -ERROR  [           main] LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 4396 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 4396, or configure this application to listen on another port.
+
+2021-05-24 06:46:31.878 -ERROR  [           main] o.a.j.l.DirectJDKLog           : Failed to start end point associated with ProtocolHandler ["http-nio-4396"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_231]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at qdu.life.ApplicationMain.main(ApplicationMain.java:17) [classes/:?]
+2021-05-24 06:46:31.880 -ERROR  [           main] o.a.j.l.DirectJDKLog           : Failed to start connector [Connector[HTTP/1.1-4396]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-4396]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at qdu.life.ApplicationMain.main(ApplicationMain.java:17) [classes/:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_231]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_231]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_231]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 more
+2021-05-24 06:46:31.902 -ERROR  [           main] LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 4396 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 4396, or configure this application to listen on another port.
+
+2021-05-24 23:21:04.204 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:04.204 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:04.205 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'POST' not supported
+2021-05-24 23:21:04.205 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : 发生异常:Request method 'POST' not supported
+2021-05-24 23:21:04.205 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396//v1/eat/allfood
+2021-05-24 23:21:04.205 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396//v1/eat/allfood
+2021-05-24 23:21:04.206 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:04.206 -ERROR  [nio-4396-exec-1] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:08.842 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:08.842 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:08.842 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.EatWhatMapper.findLikeCountByFoodId'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-05-24 23:21:08.842 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : 发生异常:nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'qdu.life.mapper.EatWhatMapper.findLikeCountByFoodId'.  It's likely that neither a Result Type nor a Result Map was specified.
+2021-05-24 23:21:08.843 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396//v1/eat/allfood
+2021-05-24 23:21:08.843 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : URL:http://localhost:4396//v1/eat/allfood
+2021-05-24 23:21:08.843 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================
+2021-05-24 23:21:08.843 -ERROR  [nio-4396-exec-4] q.l.e.GlobalExceptionHandler   : ==========================

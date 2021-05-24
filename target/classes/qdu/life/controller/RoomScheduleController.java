@@ -16,7 +16,7 @@ import qdu.life.utils.ResultUtils;
  **/
 
 @RestController
-@RequestMapping("/api/roomshedule")
+@RequestMapping("/v1/roomshedule")
 public class RoomScheduleController {
   @Autowired
   private RoomScheduleService service;
